@@ -1,0 +1,19 @@
+html
+	head
+		title Sistem Otentikasi User
+	body
+		h2 Form Login
+		if msg
+			p(style="color: #f00;") #{msg}
+
+		form(action="/login", method="post")
+			div
+				label(for="user_id") User ID
+			div
+				input(type="text", name="user_id")
+			div
+				label(for="user_password") Password
+			div
+				input(type="password", name="user_password")
+			div(style="margin-top: 10px;")
+				input(type="submit", value="Login")

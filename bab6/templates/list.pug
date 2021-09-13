@@ -1,0 +1,27 @@
+html
+	head
+		title Demo MariaDB CRUD
+	body
+		h2 Demo CRUD - Node.js dan MariaDB
+
+		table(border="1")
+			tr
+				th(width="90") ID
+				th(width="200") Judul
+				th(width="180") Penulis
+				th(width="160") Penerbit
+				th(width="110") Ubah Data
+				th(width="110") Hapus Data
+			each book in books
+				tr
+					td #{book['buku_id']}
+					td #{book['buku_judul']}
+					td #{book['buku_penulis']}
+					td #{book['buku_penerbit']}
+					td
+						a(href="/edit?id=" + book['buku_id']) Ubah
+					td
+						a(href="/delete?id=" + book['buku_id']) Hapus
+
+		p
+		a(href="/add") Tambah Data				
