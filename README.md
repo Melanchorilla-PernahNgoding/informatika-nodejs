@@ -1,1 +1,3 @@
-# informatika-nodejs
+# PEMROGRAMAN WEB DENGAN NODE.JS DAN JAVASCRIPT 
+## Penulis Budi Raharjo
+## Penerbit INFORMATIKA
